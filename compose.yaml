@@ -15,3 +15,5 @@ services:
     volumes:
 
       - ./sqlite:/db
+      
+    command: ["tail", "-f", "/dev/null"]  
