@@ -27,10 +27,64 @@ Certifique-se de ter instalado:
 1. Clone o repositório:
    ```bash
    git clone https://github.com/mariaoliveira27/livrarias
-   
- 2. Navegue até a pasta do projeto:
+2. Navegue até a pasta do projeto:
    ```bash
-   cd livrarias
+   git clone https://github.com/mariaoliveira27/livrarias
+3. Configure o banco de dados:
+   - Certifique-se de que o banco SQLite está configurado corretamente.
+   - Caso necessário, crie o banco de dados utilizando o arquivo `schema.sql`:
+     ```bash
+     sqlite3 database.db < schema.sql
+     ```
+4. Compile o projeto:
+   ```bash
+   ./mvnw clean install
+5. Inicie a aplicação:
+   ```bash
+   ./mvnw spring-boot:run
+6. Acesse a API:
+   URL base: http://localhost:8181
+
+### Com Docker:
+1. Clone o repositório:
+   
+2. Construa e inicie o serviço utilizando o Docker Compose:
+   ```bash
+   docker-compose up --build
+
+3. Acesse a API:
+   URL base: http://localhost:8181
+   
+## 🧪 Testes
+### Executar os testes unitários:
+1. Sem Docker:
+   ```bash
+   ./mvnw test
+2. Com Docker:
+   ```bash
+   docker run nome-da-imagem mvn test
+   
+## 📄 Licença
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+## 🙌 Contribuições
+Sinta-se à vontade para contribuir com este projeto. Para isso:
+
+1. Faça um fork do repositório.
+2. Crie uma branch para a sua feature:
+   ```bash
+   git checkout -b minha-feature
+3. Commit suas alterações:
+```bash
+   git commit -m 'Minha nova feature'
+
+
+
+
+
+
+   
+ 
 
 
 
