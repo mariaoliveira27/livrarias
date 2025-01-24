@@ -4,7 +4,7 @@ import java.sql.Date;
 import java.util.ArrayList;
 
 public class LivroController {
-        public void cadastrarLivro( Int id, String titulo, String autor, Date dataPublicacao, String editora, int numeroPaginas, int edicao) {
+        public void cadastrarLivro( int id, String titulo, String autor, Date dataPublicacao, String editora, int numeroPaginas, int edicao) {
             Livro livro = new Livro(id ,titulo, autor, dataPublicacao, editora, numeroPaginas, edicao);
             LivroDAO livroDAO = new LivroDAO();
             livroDAO.cadastrarLivro(livro);

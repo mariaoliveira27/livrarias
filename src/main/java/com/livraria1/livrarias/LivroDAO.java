@@ -15,7 +15,7 @@ import java.sql.ResultSet;
 
 public class LivroDAO {
 
-    private String jdbcURL ="jdbc:dockerpinata/sqlite:latest"; 
+    private String jdbcURL ="jdbc:sqlite:sqlite/livraria.db"; 
     public LivroDAO() {
         criarTabelaSeNaoExistir();
     }
