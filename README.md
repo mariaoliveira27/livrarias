@@ -1,4 +1,4 @@
-# Nome do Projeto
+# Livraria 
 
 **Descrição**: Uma API desenvolvida em Java com Spring Boot, focada em um CRUD de livros.
 
